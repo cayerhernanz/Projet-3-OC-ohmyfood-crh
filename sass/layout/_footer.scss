@@ -1,0 +1,19 @@
+footer{
+    background-color: $color-background-footer;
+    color: $color-tipography-footer;
+    h5{
+        font-size: 20px;
+        margin: 0% 0% 0% 5%;
+        padding-top: 5%;
+    }
+}
+
+#footer__links{  
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 5%;
+    a{
+        text-decoration: none;
+        color: $color-tipography-footer;
+    }
+}
