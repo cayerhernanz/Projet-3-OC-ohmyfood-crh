@@ -1,6 +1,10 @@
 @import "./base/typography";
 @import "./base/box-sizing";
 
+@import "./abstracts/variables";
+
+@import "./components/btn__back";
+
 @import "./layout/header";
 
 @import "./pages/index";

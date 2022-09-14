@@ -1,9 +1,13 @@
 header{
     width: 100%;
-    height: 200px;
+    height: 100px;
+    background-color: $color-background-primary;
+    box-shadow: 20px 15px 5px 6px darken($color-background-tertiary, 20%);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10%;
+    align-items: center;
     img{
-        height: 100px;
+        height: 40px;
     }
 }

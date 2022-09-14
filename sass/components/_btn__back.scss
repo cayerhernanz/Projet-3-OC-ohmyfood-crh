@@ -1,0 +1,11 @@
+.btn__back{
+    opacity: 1;
+    text-decoration: none;
+    margin-left: 10%;
+    i{
+        color: $color-tipography;
+    }
+     &--transparent{
+    opacity: 1;
+    }
+}

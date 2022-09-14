@@ -1,7 +1,11 @@
-#heading h1{
-    font-family: 'Roboto', sans-serif;
+#location{
+    background-color: $color-background-tertiary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 
-.btn__back--transparent{
-    opacity: 0;
+#heading h1{
+    font-family: 'Roboto', sans-serif;
 }
