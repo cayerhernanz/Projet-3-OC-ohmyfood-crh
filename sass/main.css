@@ -30,6 +30,63 @@ h2, h3, h4, p, a {
   gap: 3%;
 }
 
+.restaurant__card {
+  text-decoration: none;
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  border-radius: 15px 15px 15px 15px;
+  margin: 2% 0% 2% 0%;
+}
+.restaurant__card img {
+  height: 250px;
+  width: 100%;
+  border-radius: 15px 15px 0% 0%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant__card__image--new {
+  position: realtive;
+}
+.restaurant__card__image--new p {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  background-color: #eaeaea;
+  z-index: 7;
+}
+.restaurant__card__body {
+  background-color: #ffffff;
+  color: #101010;
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+  height: 30%;
+  padding: 4%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant__card__body__text h4 {
+  margin: 2% 0 1% 0;
+  font-size: 20px;
+}
+.restaurant__card__body__text p {
+  margin: 1% 0 2% 0;
+  font-size: 18px;
+}
+.restaurant__card__body i {
+  padding-right: 3%;
+}
+.restaurant__card__body i:hover {
+  color: #9356DC;
+  background-color: linear-gradient(38deg, #FF79DA 0%, #9356DC 100%);
+}
+.restaurant__card__body i:active {
+  color: #101010;
+  background: linear-gradient(38deg, #FF79DA 0%, #9356DC 100%);
+}
+
 header {
   width: 100%;
   height: 100px;
@@ -83,4 +140,20 @@ footer h5 {
 
 #heading h1 {
   font-family: "Roboto", sans-serif;
+}
+
+#restaurants {
+  padding: 2%;
+  height: auto;
+  background-color: #f6f6f6;
+}
+#restaurants__list {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+#restaurants h2 {
+  font-size: 24px;
+  margin: 5% 0% 1% 5%;
 }/*# sourceMappingURL=main.css.map */
