@@ -62,6 +62,15 @@ footer h5 {
 #footer__links a {
   text-decoration: none;
   color: #ffffff;
+  height: 38px;
+  font-size: 18px;
+  margin: 1% 0% 1% 0%;
+}
+#footer__links a p {
+  margin: 0% 0% 0% 0%;
+}
+#footer__links a:hover {
+  text-decoration: underline;
 }
 
 #location {
