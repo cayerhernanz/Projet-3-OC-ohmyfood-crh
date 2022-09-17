@@ -4,16 +4,32 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    @include box-shadow;
 }
 
-#heading h1{
-    font-family: 'Roboto', sans-serif;
+#heading{
+    background-color: $color-background-secondary;
+    @include box-shadow;
+    text-align: center;
+    padding: 5% 0 5% 0;
+    h1{
+        font-size: 26px;
+        font-family: 'Roboto', sans-serif;
+        margin: 0% auto 0% auto;
+        width: 60%;
+    }
+    p{
+        font-size: 18px;
+        width: 70%;
+        margin: 2% auto 5% auto;
+    }
 }
 
 #restaurants{
     padding: 2%;
     height: auto;
     background-color: $color-background-secondary;
+    @include box-shadow;
     &__list{
         display: flex;
         flex-flow: column wrap;
