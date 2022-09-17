@@ -25,6 +25,19 @@
     }
 }
 
+#explanation{
+    h2{
+        font-size: 24px;
+    }
+    ol{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+}
+
 #restaurants{
     padding: 2%;
     height: auto;
