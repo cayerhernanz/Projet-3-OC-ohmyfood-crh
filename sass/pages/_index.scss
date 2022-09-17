@@ -4,12 +4,10 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @include box-shadow;
 }
 
 #heading{
     background-color: $color-background-secondary;
-    @include box-shadow;
     text-align: center;
     padding: 5% 0 5% 0;
     h1{
@@ -26,23 +24,62 @@
 }
 
 #explanation{
+    padding-bottom: 10%;
     h2{
         font-size: 24px;
+        margin: 5% 0% 1% 7%;;
     }
+    //* test style de liste //
     ol{
+        list-style-type: none;
+        counter-reset: orderedlist;
+        li{
+            &:before{
+                counter-increment: orderedlist;
+                content: counter(orderedlist);
+                font-family: "Roboto";
+                font-size: 14px;
+                line-height: 0.75;
+                padding: 2%;
+                width: 18px;
+                text-align: center;
+                color: $color-tipography-footer;
+                background-color: $color-primary;
+                border-radius: 100%;
+            }
+        }
+    }
+    //* fin du style de liste//
+    ol{
+        padding-left: 0%;
+        margin: auto 7% auto 7%;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        align-self: center;
-        align-items: center;
+        li{
+            background-color: $color-background-secondary;
+            margin: 2% 0% 2% 0%;
+            border-radius: 15px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5%;
+            i{
+                color: darken($color: $color-background-secondary, $amount: 50%)
+            }
+            h3{
+                font-size: 18px;
+            }
+        }
     }
+
 }
+
 
 #restaurants{
     padding: 2%;
     height: auto;
     background-color: $color-background-secondary;
-    @include box-shadow;
     &__list{
         display: flex;
         flex-flow: column wrap;
