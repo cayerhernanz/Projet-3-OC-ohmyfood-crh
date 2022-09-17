@@ -35,6 +35,7 @@ h2, h3, h4, p, a {
   display: flex;
   flex-flow: column wrap;
   width: 90%;
+  border: solid 2px transparent;
   border-radius: 15px 15px 15px 15px;
   margin: 2% 0% 2% 0%;
 }
@@ -80,11 +81,9 @@ h2, h3, h4, p, a {
 }
 .restaurant__card__body i:hover {
   color: #9356DC;
-  background-color: linear-gradient(38deg, #FF79DA 0%, #9356DC 100%);
 }
-.restaurant__card__body i:active {
-  color: #101010;
-  background: linear-gradient(38deg, #FF79DA 0%, #9356DC 100%);
+.restaurant__card:hover {
+  border: solid 2px #eaeaea;
 }
 
 header {

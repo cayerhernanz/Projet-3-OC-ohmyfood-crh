@@ -3,6 +3,7 @@
     display: flex;
     flex-flow: column wrap;
     width: 90%;
+    border: solid 2px transparent;
     border-radius: 15px 15px 15px 15px;
     margin: 2% 0% 2% 0%;
         img{
@@ -48,13 +49,11 @@
             padding-right: 3%;
             &:hover{
                 color: $color-primary;
-                background-color: linear-gradient(38deg, $color-secondary 0%, $color-primary 100%);
-            }
-            &:active{
-                color: $color-tipography;
-                background: linear-gradient(38deg, $color-secondary 0%, $color-primary 100%);
             }
         }
+    }
+    &:hover{
+        border: solid 2px $color-background-tertiary;
     }
     
 
