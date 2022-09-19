@@ -19,8 +19,10 @@
                 position: absolute;
                 top: 8px;
                 right: 16px;
-                background-color: $color-background-tertiary;
+                background-color: $color-tertiary;
                 z-index: 7;
+                font-weight: bold;
+                color: darken($color: $color-tertiary, $amount: 20%);
             }
         }
     }
