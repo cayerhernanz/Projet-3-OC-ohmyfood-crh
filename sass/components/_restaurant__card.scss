@@ -47,12 +47,6 @@
             font-size: 18px;
             }
         }
-        i{
-            padding-right: 3%;
-            &:hover{
-                color: $color-primary;
-            }
-        }
     }
     &:hover{
         border: solid 2px $color-background-tertiary;

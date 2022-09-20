@@ -46,6 +46,30 @@ h2, h3, h4, p, a {
   text-decoration: none;
 }
 
+.fav__heart {
+  padding-right: 4%;
+}
+.fav__heart__regular i {
+  font-size: 30px;
+  color: #101010;
+  position: relative;
+  left: 33.5px;
+}
+.fav__heart__solid i {
+  position: relative;
+  font-size: 30px;
+  color: transparent;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(25deg, rgb(255, 121, 215), rgb(147, 86, 220));
+  opacity: 0;
+  transition: opacity 1s 10ms ease-in-out;
+}
+.fav__heart__solid:hover i {
+  opacity: 1;
+}
+
 .restaurant__card {
   text-decoration: none;
   display: flex;
@@ -93,12 +117,6 @@ h2, h3, h4, p, a {
 .restaurant__card__body__text p {
   margin: 1% 0 2% 0;
   font-size: 18px;
-}
-.restaurant__card__body i {
-  padding-right: 3%;
-}
-.restaurant__card__body i:hover {
-  color: #9356DC;
 }
 .restaurant__card:hover {
   border: solid 2px #eaeaea;

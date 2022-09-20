@@ -1,0 +1,29 @@
+.fav__heart{
+    padding-right: 4%;
+    &__regular{
+        i{
+            font-size: 30px;
+            color: $color-tipography;
+            position: relative;
+            left: 33.5px;
+        }
+    }
+    &__solid{
+        i{
+            position: relative;
+            font-size: 30px;
+            color: transparent;
+            position: relative;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(25deg,rgba(255, 121, 215, 1), rgba(147, 86, 220, 1));
+            opacity: 0;
+            transition: opacity 1s 10ms ease-in-out;
+        }
+        &:hover{
+            i{
+               opacity: 1;
+            }
+        }
+    }
+}
