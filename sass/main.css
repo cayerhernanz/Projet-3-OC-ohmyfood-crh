@@ -34,8 +34,10 @@ h2, h3, h4, p, a {
   width: 230px;
   height: 56px;
   border-radius: 32px;
-  background: linear-gradient(20deg, rgb(255, 121, 215), rgb(147, 86, 220));
+  background: linear-gradient(10deg, rgb(255, 121, 215), rgb(147, 86, 220));
   box-shadow: 0 0 10px 5px #dddddd;
+  position: relative;
+  z-index: 1;
 }
 .btn__main {
   font-size: 17px;
@@ -50,6 +52,23 @@ h2, h3, h4, p, a {
 }
 .btn--order {
   color: #ffffff;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  border-radius: 32px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0%;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(10deg, #ff93df, #a16be0);
+  box-shadow: 0 0 10px 5px #909090;
+  opacity: 0;
+  transition: opacity 250ms ease-in;
 }
 
 .fav__heart {

@@ -2,8 +2,10 @@
     width: 230px;
     height: 56px;
     border-radius: 32px;
-    background: linear-gradient(20deg,rgba(255, 121, 215, 1), rgba(147, 86, 220, 1));
+    background: linear-gradient(10deg,rgba(255, 121, 215, 1), rgba(147, 86, 220, 1));
     box-shadow: 0 0 10px 5px darken($color: $color-background-secondary, $amount: 10%);
+    position: relative;
+    z-index: 1;
     &__main{
         font-size: 17px;
         font-family:'Roboto', sans-serif;
@@ -19,5 +21,24 @@
     }
     &--order{
         color: $color-tipography-btn;
+    }
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+    &::after{
+        content: "";
+        border-radius: 32px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0%;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(10deg, lighten($color: rgba(255, 121, 215, 1), $amount: 5%), lighten($color: rgba(147, 86, 220, 1), $amount: 5%));
+        box-shadow: 0 0 10px 5px darken($color: $color-background-secondary, $amount: 40%);
+        opacity: 0;
+        transition: opacity 250ms ease-in;
     }
 }
