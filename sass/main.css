@@ -30,20 +30,26 @@ h2, h3, h4, p, a {
   gap: 3%;
 }
 
+.btn {
+  width: 230px;
+  height: 56px;
+  border-radius: 32px;
+  background: linear-gradient(20deg, rgb(255, 121, 215), rgb(147, 86, 220));
+  box-shadow: 10px 5px 9px #c3c3c3;
+}
 .btn__main {
-  font-size: 18px;
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  width: 200px;
-  height: 56px;
-  border-width: 0px;
-  color: color-tipography-btn;
   border-color: transparent;
-  border-radius: 32px;
-  background: linear-gradient(rgb(255, 121, 215), rgb(147, 86, 220));
+  text-align: center;
 }
-.btn__main--restaurant {
+.btn--restaurants a {
   text-decoration: none;
+  color: #ffffff;
+}
+.btn--order {
+  color: #ffffff;
 }
 
 .fav__heart {

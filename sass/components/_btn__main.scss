@@ -1,18 +1,23 @@
-.btn__main{
-    font-size: 18px;
-    font-family:'Roboto', sans-serif;
-    font-weight:bold;
-    width: 200px;
+.btn{
+    width: 230px;
     height: 56px;
-    border-width: 0px;
-    color: color-tipography-btn;
-    border-color:transparent;
     border-radius: 32px;
-    background: linear-gradient(rgba(255, 121, 215, 1), rgba(147, 86, 220, 1));
-    &--restaurant{
-        text-decoration: none;
+    background: linear-gradient(20deg,rgba(255, 121, 215, 1), rgba(147, 86, 220, 1));
+    @include shadow($color-background-secondary);
+    &__main{
+        font-size: 17px;
+        font-family:'Roboto', sans-serif;
+        font-weight:bold;
+        border-color: transparent;
+        text-align: center;
+    }
+    &--restaurants{
+        a{
+            text-decoration: none;
+            color: $color-tipography-btn;
+        }
+    }
+    &--order{
+        color: $color-tipography-btn;
     }
 }
-
-
-//* no me lo lee, evr bem //
