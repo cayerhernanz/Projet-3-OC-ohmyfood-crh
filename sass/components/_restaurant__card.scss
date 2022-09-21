@@ -1,5 +1,6 @@
 .restaurant__card{
     text-decoration: none;
+    box-shadow: 0 0 2px 2px darken($color: $color-background-secondary, $amount: 5%);
     display: flex;
     flex-flow: column wrap;
     width: 90%;
@@ -14,15 +15,17 @@
         }
     &__image{
         &--new{
-            position: realtive;
+            position: relative;
             p{
                 position: absolute;
-                top: 8px;
+                top: 2px;
                 right: 16px;
                 background-color: $color-tertiary;
-                z-index: 7;
-                font-weight: bold;
-                color: darken($color: $color-tertiary, $amount: 20%);
+                z-index: 4;
+                font-size: 15px;
+                font-weight: 600;
+                color: darken($color: $color-tertiary, $amount: 40%);
+                padding: 1% 2% 1% 2%;
             }
         }
     }
@@ -49,7 +52,7 @@
         }
     }
     &:hover{
-        border: solid 2px $color-background-tertiary;
+        box-shadow: s;
     }
     
 

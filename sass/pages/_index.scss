@@ -8,6 +8,7 @@
 
 #heading{
     background-color: $color-background-secondary;
+    @include shadow($color-background-secondary);
     text-align: center;
     padding: 5% 0 5% 0;
     h1{
@@ -58,7 +59,8 @@
         justify-content: center;
         li{
             background-color: $color-background-secondary;
-            margin: 2% 0% 2% 0%;
+            @include shadow($color-background-secondary);
+            margin: 3% 0% 3% 0%;
             border-radius: 15px;
             display: flex;
             justify-content: flex-start;
@@ -72,12 +74,11 @@
             }
         }
     }
-
 }
-
 
 #restaurants{
     padding: 2%;
+    padding-bottom: 10%;
     height: auto;
     background-color: $color-background-secondary;
     &__list{

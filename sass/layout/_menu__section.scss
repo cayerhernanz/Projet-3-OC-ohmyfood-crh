@@ -15,12 +15,15 @@
     }
     &__dish{
         background-color: $color-background-primary;
+        @include shadow($color-background-secondary);
         margin: 3% auto 3% auto;
         padding: 1% 5% 1% 4%; 
         border-radius: 25px;
+        height: 75px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        align-content: center;
         align-items: flex-end;
         &__text{
             h3{
@@ -54,3 +57,5 @@
         }
     }
 }
+
+//* Ajustar las tallas de las pstillas de los platos cuando añada la animación de selección //
