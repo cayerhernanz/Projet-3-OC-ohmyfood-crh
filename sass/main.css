@@ -210,6 +210,7 @@ footer h5 {
   font-size: 30px;
 }
 .menu__dish {
+  position: relative;
   background-color: #ffffff;
   box-shadow: 0 0 5px 3px #dddddd;
   margin: 3% auto 3% auto;
@@ -239,6 +240,27 @@ footer h5 {
 }
 .menu__dish__price p {
   margin: 0;
+}
+.menu__dish__selector {
+  opacity: 0;
+  border-radius: 0 25px 25px 0;
+  height: 93px;
+  width: 75px;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__dish__selector i {
+  color: #ffffff;
+  font-size: 25px;
+}
+.menu__dish:hover {
+  border: solid 5px red;
 }
 .menu__dishtype {
   margin: 2% 3% 2% 3%;
