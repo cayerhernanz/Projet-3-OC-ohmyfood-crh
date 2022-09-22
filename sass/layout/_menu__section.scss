@@ -14,7 +14,6 @@
         }
     }
     &__dish{
-        position: relative;
         background-color: $color-background-primary;
         @include shadow($color-background-secondary);
         margin: 3% auto 3% auto;
@@ -43,28 +42,7 @@
             margin: 0;
              }
             font-size: 18px;
-        }
-        &__selector{
-            opacity: 0;
-            border-radius: 0 25px 25px 0;
-            height: 93px;
-            width:75px;
-            background-color: $color-tertiary;
-            position: absolute;
-            bottom: 0;
-            top: 0;
-            right: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            i{
-                color: $color-background-primary;
-                font-size: 25px;
-            }
-        }
-        &:hover{
-            border: solid 5px red;
-        }
+        }       
     }
     &__dishtype{
         margin: 2% 3% 2% 3%;
