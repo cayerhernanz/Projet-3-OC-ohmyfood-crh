@@ -474,6 +474,59 @@ footer h5 {
   transform: rotate(0);
 }
 
+.menu__dishtype__list {
+  opacity: 1;
+  -webkit-animation: stretching 2s;
+          animation: stretching 2s;
+}
+.menu__dishtype__list .menu__dish {
+  -webkit-animation: fading 2s ease-in;
+          animation: fading 2s ease-in;
+}
+
+@-webkit-keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes stretching {
+  0% {
+    transform-origin: top;
+    transform: scaleY(0%);
+  }
+  100% {
+    transform-origin: top;
+    transform: scaleY(100%);
+  }
+}
+@keyframes stretching {
+  0% {
+    transform-origin: top;
+    transform: scaleY(0%);
+  }
+  100% {
+    transform-origin: top;
+    transform: scaleY(100%);
+  }
+}
 #location {
   background-color: #eaeaea;
   display: flex;
