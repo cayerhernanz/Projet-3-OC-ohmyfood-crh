@@ -629,4 +629,27 @@ footer h5 {
   padding-bottom: 15%;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 481px) {
+  header {
+    gap: 20%;
+  }
+  .loader {
+    z-index: -1;
+  }
+  #explanation ol {
+    margin: auto 2% auto 2%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 10%;
+  }
+  #explanation ol li {
+    padding: 3%;
+  }
+  .image-menu {
+    height: 350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=main.css.map */
