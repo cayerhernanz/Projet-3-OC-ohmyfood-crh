@@ -1,20 +1,30 @@
-@media screen and (min-width:481px){
+@media screen and (min-width:768px){
     header{
         gap: 20%;
     }
 
     .loader{
         z-index: -1;
+        &__spinner{
+            top: 8%;
+            left: 40%;
+            right: 0;
+        }
     }
 
     #explanation{
         ol{
-            margin: auto 2% auto 2%;
+            margin: auto 3% auto 3%;
             flex-flow: row nowrap;
             justify-content: flex-start;
             gap: 10%;
             li{
                 padding: 3%;
+                gap: 10%;
+                &:before{
+                    padding: 2%;
+                    margin-left: -20%;
+                }
             }
         }
     }
