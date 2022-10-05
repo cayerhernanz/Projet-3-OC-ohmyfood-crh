@@ -1,4 +1,5 @@
 footer{
+    z-index: 1;
     background-color: $color-background-footer;
     color: $color-tipography-footer;
     h5{
@@ -12,6 +13,7 @@ footer{
     display: flex;
     flex-flow: column wrap;
     margin-left: 5%;
+    z-index: 3;
     a{
         text-decoration: none;
         color: $color-tipography-footer;

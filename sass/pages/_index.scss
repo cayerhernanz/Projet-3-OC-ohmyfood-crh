@@ -4,6 +4,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 3%;
 }
 
 #heading{
@@ -30,7 +31,7 @@
         font-size: 24px;
         margin: 5% 0% 1% 7%;;
     }
-    //* test style de liste //
+    //* style de liste //
     ol{
         list-style-type: none;
         counter-reset: orderedlist;
@@ -42,6 +43,7 @@
                 font-size: 14px;
                 line-height: 0.75;
                 padding: 2%;
+                margin-left: -4%;
                 width: 18px;
                 text-align: center;
                 color: $color-tipography-footer;
@@ -61,16 +63,21 @@
             background-color: $color-background-secondary;
             @include shadow($color-background-secondary);
             margin: 3% 0% 3% 0%;
-            border-radius: 15px;
+            border-radius: 25px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             gap: 5%;
             i{
-                color: darken($color: $color-background-secondary, $amount: 50%)
+                color: darken($color: $color-background-secondary, $amount: 50%);
             }
             h3{
                 font-size: 18px;
+            }
+            &:hover{
+                i{
+                    color: $color-primary;
+                }
             }
         }
     }
