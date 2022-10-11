@@ -39,6 +39,17 @@
         padding-top: 1%;
     }
 
+    .menu{
+        &__dish{
+            &__text{
+                padding: 2% 1% 1% 3%;
+            }
+            &__price{
+                padding-bottom: 2%;
+            }
+        }
+    }
+
     footer{
         h5{
             padding-top: 2%;
