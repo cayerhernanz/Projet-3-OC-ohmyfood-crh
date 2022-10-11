@@ -6,7 +6,7 @@
     margin-top: -10%;
     z-index: 1;
     &__header{
-        margin: 4% 10% 2% 3%;
+        padding: 4% 10% 2% 3%;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -18,8 +18,8 @@
     &__dish{
         background-color: $color-background-primary;
         @include shadow($color-background-secondary);
-        margin: 3% auto 3% auto;
-        padding: 0%;
+        padding: 3% auto 3% auto;
+        margin: 0 0 2% 0;
         height: 93px;
         border-radius: 25px;
         display: flex;
@@ -28,18 +28,29 @@
         align-content: center;
         align-items: flex-end;
         &__text{
-            margin: 2%;
+            width: 100%;
+            padding: 3%;
+            margin: 0;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-content: space-between;
+            gap: 15%;
             h3{
                 font-size: 20px;
-                margin: 0 0 4% 0;
+                padding: 0;
+                margin: 0;
             }
             p{
                 font-size: 18px;  
-                margin: 4% 0 0 0;       
+                padding: 0;
+                margin: 0;     
             }
         }
         &__price{
-            margin: 2%;
+            width: 31px;
+            padding: 2% 8% 4% 0%;
+            margin: 0;
             p{
             margin: 0;
              }
@@ -47,7 +58,7 @@
         }       
     }
     &__dishtype{
-        margin: 2% 3% 2% 3%;
+        padding: 2% 3% 2% 3%;
         h2{
             width: 10%;
             font-size: 22px;
@@ -65,42 +76,14 @@
 //* Dish selector *//
 
 .menu__dish{
-    background-color: $color-background-primary;
-    @include shadow($color-background-secondary);
-    margin: 3% auto 3% auto;
-    height: 93px;
-    border-radius: 25px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: flex-end;
     overflow: hidden;
     &__text{
-        width: 200px;
-        margin: 2% 0% 5% 5%;
         flex-grow: 1;
-        h3{
-            font-size: 20px;
-            margin: 0 0 4% 0;
-        }
-        p{
-            font-size: 18px;  
-            margin: 4% 0 0 0;       
-        }
         h3,p{
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
-    }
-    &__price{
-        width: 31px;
-        margin: 2% 5% 5% 0%;
-        p{
-        margin: 0;
-         }
-        font-size: 18px;
     }
     &__selector{
         border-radius: 0 25px 25px 0;
