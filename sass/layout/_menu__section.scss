@@ -18,7 +18,7 @@
     &__dish{
         background-color: $color-background-primary;
         @include shadow($color-background-secondary);
-        padding: 3% auto 3% auto;
+        padding: 0%;
         margin: 0 0 2% 0;
         height: 93px;
         border-radius: 25px;
@@ -29,13 +29,13 @@
         align-items: flex-end;
         &__text{
             width: 100%;
-            padding: 3%;
+            padding: 4% 2% 3% 4%;
             margin: 0;
             height: 100%;
             display: flex;
             flex-flow: column nowrap;
             align-content: space-between;
-            gap: 15%;
+            gap: 20%;
             h3{
                 font-size: 20px;
                 padding: 0;
@@ -49,7 +49,7 @@
         }
         &__price{
             width: 31px;
-            padding: 2% 8% 4% 0%;
+            padding: 1% 10% 4% 0%;
             margin: 0;
             p{
             margin: 0;

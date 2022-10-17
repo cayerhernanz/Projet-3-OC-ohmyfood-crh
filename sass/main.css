@@ -132,6 +132,8 @@ body {
   box-shadow: 0 0 10px 5px #dddddd;
   position: relative;
   z-index: 1;
+  text-decoration: none;
+  color: #ffffff;
 }
 .btn__main {
   font-size: 17px;
@@ -140,9 +142,8 @@ body {
   border-color: transparent;
   text-align: center;
 }
-.btn--restaurants a {
-  text-decoration: none;
-  color: #ffffff;
+.btn--restaurants {
+  padding: 3% 5% 3% 5%;
 }
 .btn--order {
   color: #ffffff;
@@ -163,11 +164,6 @@ body {
   box-shadow: 0 0 10px 5px #909090;
   opacity: 0;
   transition: opacity 250ms ease-in;
-}
-
-.btn-link {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 .fav__heart {
@@ -246,7 +242,7 @@ body {
   font-size: 18px;
 }
 .restaurant__card:hover {
-  box-shadow: s;
+  box-shadow: 0 0 2px 2px #dddddd;
 }
 
 header {
@@ -319,7 +315,7 @@ footer h5 {
 .menu__dish {
   background-color: #ffffff;
   box-shadow: 0 0 5px 3px #dddddd;
-  padding: 3% auto 3% auto;
+  padding: 0%;
   margin: 0 0 2% 0;
   height: 93px;
   border-radius: 25px;
@@ -331,13 +327,13 @@ footer h5 {
 }
 .menu__dish__text {
   width: 100%;
-  padding: 3%;
+  padding: 4% 2% 3% 4%;
   margin: 0;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-content: space-between;
-  gap: 15%;
+  gap: 20%;
 }
 .menu__dish__text h3 {
   font-size: 20px;
@@ -351,7 +347,7 @@ footer h5 {
 }
 .menu__dish__price {
   width: 31px;
-  padding: 2% 8% 4% 0%;
+  padding: 1% 10% 4% 0%;
   margin: 0;
   font-size: 18px;
 }
@@ -443,7 +439,7 @@ footer h5 {
 @-webkit-keyframes stretching {
   0% {
     transform-origin: top;
-    transform: scaleY(0%);
+    transform: scaleY(1%);
   }
   100% {
     transform-origin: top;
@@ -453,7 +449,7 @@ footer h5 {
 @keyframes stretching {
   0% {
     transform-origin: top;
-    transform: scaleY(0%);
+    transform: scaleY(1%);
   }
   100% {
     transform-origin: top;

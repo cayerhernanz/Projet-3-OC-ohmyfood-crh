@@ -6,6 +6,8 @@
     box-shadow: 0 0 10px 5px darken($color: $color-background-secondary, $amount: 10%);
     position: relative;
     z-index: 1;
+    text-decoration: none;
+    color: $color-tipography-btn;
     &__main{
         font-size: 17px;
         font-family:'Roboto', sans-serif;
@@ -14,10 +16,7 @@
         text-align: center;
     }
     &--restaurants{
-        a{
-            text-decoration: none;
-            color: $color-tipography-btn;
-        }
+       padding: 3% 5% 3% 5%;
     }
     &--order{
         color: $color-tipography-btn;
@@ -41,9 +40,4 @@
         opacity: 0;
         transition: opacity 250ms ease-in;
     }
-}
-
-.btn-link{
-    color: $color-tipography-btn;
-    text-decoration: none;
 }
