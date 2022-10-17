@@ -437,23 +437,23 @@ footer h5 {
   }
 }
 @-webkit-keyframes stretching {
-  0% {
+  1% {
     transform-origin: top;
-    transform: scaleY(1%);
+    transform: scaleY(0.1);
   }
   100% {
     transform-origin: top;
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
 }
 @keyframes stretching {
-  0% {
+  1% {
     transform-origin: top;
-    transform: scaleY(1%);
+    transform: scaleY(0.1);
   }
   100% {
     transform-origin: top;
-    transform: scaleY(100%);
+    transform: scaleY(1);
   }
 }
 #location {
