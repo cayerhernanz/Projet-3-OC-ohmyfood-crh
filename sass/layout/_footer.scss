@@ -3,22 +3,24 @@ footer{
     color: $color-tipography-footer;
     h5{
         font-size: 20px;
-        margin: 0% 0% 0% 5%;
-        padding-top: 5%;
+        margin: 0%;
+        padding: 5% 0% 5% 5%;
     }
 }
 
 #footer__links{  
     display: flex;
     flex-flow: column wrap;
-    margin-left: 5%;
+    padding: 0% 0% 5% 5%;
     z-index: 3;
     a{
         text-decoration: none;
         color: $color-tipography-footer;
-        height: 38px;
+        height: 30px;
         font-size: 18px;
-        margin: 1% 0% 1% 0%;
+        margin: 0%;
+        display: flex;
+        align-items: center;
         p{
             margin: 0% 0% 0% 0%;
         }

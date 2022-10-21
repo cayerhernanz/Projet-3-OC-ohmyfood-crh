@@ -4,24 +4,29 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 3%;
+    gap: 5%;
+    padding: 3% 0% 3% 0%;
+    p{
+        margin: 0%;
+        font-weight: 430;
+    }
 }
 
 #heading{
     background-color: $color-background-secondary;
     @include shadow($color-background-secondary);
     text-align: center;
-    padding: 5% 0 5% 0;
+    padding: 5% 0 15% 0;
     h1{
         font-size: 26px;
         font-family: 'Roboto', sans-serif;
-        margin: 0% auto 0% auto;
-        width: 60%;
+        margin: 0%;
+        padding: 5% 20% 3% 20%;
     }
     p{
         font-size: 18px;
-        width: 70%;
-        margin: 2% auto 5% auto;
+        margin: 0%;
+        padding: 2% 15% 10% 15%;
     }
 }
 

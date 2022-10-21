@@ -269,22 +269,24 @@ footer {
 }
 footer h5 {
   font-size: 20px;
-  margin: 0% 0% 0% 5%;
-  padding-top: 5%;
+  margin: 0%;
+  padding: 5% 0% 5% 5%;
 }
 
 #footer__links {
   display: flex;
   flex-flow: column wrap;
-  margin-left: 5%;
+  padding: 0% 0% 5% 5%;
   z-index: 3;
 }
 #footer__links a {
   text-decoration: none;
   color: #ffffff;
-  height: 38px;
+  height: 30px;
   font-size: 18px;
-  margin: 1% 0% 1% 0%;
+  margin: 0%;
+  display: flex;
+  align-items: center;
 }
 #footer__links a p {
   margin: 0% 0% 0% 0%;
@@ -461,25 +463,30 @@ footer h5 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 3%;
+  gap: 5%;
+  padding: 3% 0% 3% 0%;
+}
+#location p {
+  margin: 0%;
+  font-weight: 430;
 }
 
 #heading {
   background-color: #f6f6f6;
   box-shadow: 0 0 5px 3px #dddddd;
   text-align: center;
-  padding: 5% 0 5% 0;
+  padding: 5% 0 15% 0;
 }
 #heading h1 {
   font-size: 26px;
   font-family: "Roboto", sans-serif;
-  margin: 0% auto 0% auto;
-  width: 60%;
+  margin: 0%;
+  padding: 5% 20% 3% 20%;
 }
 #heading p {
   font-size: 18px;
-  width: 70%;
-  margin: 2% auto 5% auto;
+  margin: 0%;
+  padding: 2% 15% 10% 15%;
 }
 
 #explanation {
