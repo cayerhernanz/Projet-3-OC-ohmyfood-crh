@@ -264,7 +264,6 @@ header img {
 }
 
 footer {
-  z-index: 1;
   background-color: #353535;
   color: #ffffff;
 }
@@ -552,25 +551,32 @@ footer h5 {
   margin: 5% 0% 1% 5%;
 }
 
+main {
+  background-color: #f6f6f6;
+}
+
 .image-menu {
   width: 100%;
-  height: 320px;
+  height: 340px;
   z-index: 1;
-  position: absolute;
+  position: relative;
 }
 
 .menu {
-  z-index: 2;
   position: relative;
-  top: 275px;
+  z-index: 2;
+  bottom: 50px;
+  padding-bottom: 0%;
 }
 
 .commande {
+  position: relative;
   background-color: #f6f6f6;
   padding-top: 5%;
-  padding-bottom: 15%;
+  padding-bottom: 0%;
   display: flex;
   justify-content: center;
+  bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
