@@ -44,5 +44,21 @@
         height: 350px;
         object-fit: cover;
     }
+
+    .menu{
+        &__dishtype{
+            &__list{
+                margin-bottom: 5%;
+            }
+        }
+        &__dish{
+            &__text{
+                padding: 3% 0% 2% 4%;
+            }
+            &__price{
+                padding-bottom: 3%;
+            }
+        }
+    }
     
 }
