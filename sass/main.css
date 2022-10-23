@@ -637,6 +637,19 @@ main {
   header img {
     height: 50px;
   }
+  #location {
+    gap: 1%;
+    padding: 2% 0% 2% 0%;
+  }
+  #location p {
+    font-size: 20px;
+  }
+  #heading {
+    padding: 1% 0% 3% 0%;
+  }
+  #heading p {
+    padding: 1% 15% 4% 15%;
+  }
   #explanation {
     padding-bottom: 2%;
   }
@@ -666,6 +679,11 @@ main {
   #restaurants__list {
     flex-flow: row nowrap;
     justify-content: space-between;
+  }
+  .loader__spinner {
+    top: 8%;
+    left: 45%;
+    right: 0;
   }
   .menu__dish__text {
     padding: 2% 1% 1% 3%;
