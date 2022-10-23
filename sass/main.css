@@ -318,7 +318,7 @@ footer h5 {
   box-shadow: 0 0 5px 3px #dddddd;
   padding: 0%;
   margin: 0 0 2% 0;
-  height: 93px;
+  height: 100px;
   border-radius: 25px;
   display: flex;
   flex-flow: row nowrap;
@@ -328,7 +328,7 @@ footer h5 {
 }
 .menu__dish__text {
   width: 100%;
-  padding: 4% 2% 3% 4%;
+  padding: 4% 0% 3% 4%;
   margin: 0;
   height: 100%;
   display: flex;
@@ -348,7 +348,7 @@ footer h5 {
 }
 .menu__dish__price {
   width: 31px;
-  padding: 1% 10% 4% 0%;
+  padding: 1% 10% 5.5% 0%;
   margin: 0;
   font-size: 18px;
 }
@@ -374,7 +374,8 @@ footer h5 {
   overflow: hidden;
 }
 .menu__dish__text {
-  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu__dish__text h3, .menu__dish__text p {
   overflow: hidden;
@@ -398,7 +399,7 @@ footer h5 {
   transform: rotate(360deg);
 }
 .menu__dish:hover > .menu__dish__selector {
-  width: 75px;
+  width: 80px;
 }
 .menu__dish:hover > .menu__dish__selector i {
   transform: rotate(0);
