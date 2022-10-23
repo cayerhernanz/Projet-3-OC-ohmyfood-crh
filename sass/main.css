@@ -639,6 +639,12 @@ main {
   .menu__dish__price {
     padding-bottom: 3%;
   }
+  footer h5 {
+    padding: 3% 0% 3% 5%;
+  }
+  footer__linjs {
+    padding-bottom: 2%;
+  }
 }
 @media screen and (min-width: 1024px) {
   header {
