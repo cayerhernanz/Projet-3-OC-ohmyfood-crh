@@ -27,16 +27,18 @@ body {
 }
 .loader__spinner {
   position: absolute;
-  top: 5%;
-  left: 33%;
+  top: 0;
+  left: 0;
   right: 0;
-  width: 300px;
+  width: 100%;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
 }
 .loader__spinner__frame {
   opacity: 0;
   display: block;
-  position: absolute;
   width: 150px;
   height: 150px;
   border: 10px solid #9356DC;
@@ -458,6 +460,11 @@ footer h5 {
     transform: scaleY(1);
   }
 }
+body {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 #location {
   background-color: #eaeaea;
   display: flex;
